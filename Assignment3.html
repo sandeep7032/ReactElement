@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainDiv {
+        margin-top: 100px;
+        height: 550px;
+        width: 500px;
+        box-shadow: 0 0 5px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .div {
+        height: 15%;
+        width: 80%;
+        display: flex;
+      }
+
+      .divAll {
+        width: 35%;
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin-left: 11px;
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+      }
+      .f {
+        background-color: rgb(155, 69, 228);
+      }
+      .m {
+        background-color: rgb(225, 58, 157);
+      }
+      h2 {
+        color: rgb(155, 69, 228);
+      }
+      img {
+        margin-top: 30px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const mainDiv = (
+        <div className="mainDiv">
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
+            alt=""
+            width="200px"
+            height="200px"
+          />
+          <br />
+          <h1>Jackson</h1>
+          <br />
+          <p>Bussinessman</p>
+          <br />
+          <div className="div">
+            <div className="divAll">
+              <h2>172</h2>
+              <p>POSTS</p>
+            </div>
+            <div className="divAll">
+              <h2>47</h2>
+              <p>FOLLOWERS</p>
+            </div>
+            <div className="divAll">
+              <h2>20</h2>
+              <p>FOLLOWING</p>
+            </div>
+          </div>
+          <div>
+            <button className="f">Follow</button>
+            <button className="m">Message</button>
+          </div>
+        </div>
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(mainDiv);
+    </script>
+  </body>
+</html>
