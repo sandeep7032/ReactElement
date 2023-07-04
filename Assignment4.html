@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <title>assingment2t</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const br = React.createElement("br", {});
+      const hr = React.createElement("hr");
+
+      const h1 = React.createElement("h1", {}, "Sandeep");
+      const p = React.createElement(
+        "p",
+        {},
+        "Software Development Learning at Geekster"
+      );
+      const a = React.createElement(
+        "a",
+        {
+          href: "https://www.linkedin.com/in/sandeep-chitigori/",
+          style: { fontSize: "1.2rem" },
+        },
+        [
+          "Linkedin",
+          "\xA0\xA0",
+          React.createElement(
+            "a",
+            { href: "https://github.com/sandeep7032/" },
+            "Github"
+          ),
+        ]
+      );
+
+      const h2 = React.createElement("h2", {}, "Experience");
+      const h3 = React.createElement(
+        "h3",
+        {},
+        "Software developer at Geekster"
+      );
+      const p1 = React.createElement("p", {}, [
+        ` Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        br,
+        ` Possimus,br ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae totam id commodi laborum enim, sint ea odit quasi soluta!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis reprehenderit est!`,
+      ]);
+      const h3Two = React.createElement("h3", {}, "Educating at Geekster");
+
+      const p2 = React.createElement("p", {}, [
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cum inventore aliquam, nulla eos dignissimos ipsum voluptas id, dolores suscipit totam nostrum perferendis alias, expedita quaerat distinctio asperiores! Nobis, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ab qui autem nesciunt vel consequatur non totam, temporibus excepturi voluptatem iure impedit ut repellendus earum necessitatibus nemo eligendi, animi debitis reiciendis suscipit. Unde iure obcaecati dolores, numquam quibusdam rerum facilis a quam quos ad ullam consectetur reiciendis deserunt similique.",
+      ]);
+
+      const h2Two = React.createElement("h2", {}, "Skills");
+
+      const ul = React.createElement(
+        "ul",
+        {
+          style: { paddingLeft: "2.5rem" },
+        },
+        [
+          React.createElement("li", {}, "Html"),
+          React.createElement("li", {}, "Css"),
+          React.createElement("li", {}, "Javascript"),
+          React.createElement("li", {}, "React"),
+          React.createElement("li", {}, "Dsa"),
+        ]
+      );
+
+      const h2Three = React.createElement("h2", {}, "Hobbies");
+
+      const ol = React.createElement(
+        "ol",
+        {
+          style: { paddingLeft: "2.5rem" },
+        },
+        [
+          React.createElement("li", {}, "Singing"),
+          React.createElement("li", {}, "Acting"),
+          React.createElement("li", {}, "Reading"),
+          React.createElement("li", {}, "Study"),
+          React.createElement("li", {}, "Walking"),
+        ]
+      );
+
+      const mainDiv = React.createElement("div", { className: "mainDiv" }, [
+        h1,
+        br,
+        p,
+        br,
+        a,
+        br,
+        hr,
+        br,
+        h2,
+        br,
+        h3,
+        br,
+        p1,
+        br,
+        hr,
+        br,
+        h3Two,
+        br,
+        p2,
+        br,
+        hr,
+        br,
+        h2Two,
+        br,
+        ul,
+        br,
+        hr,
+        br,
+        h2Three,
+        br,
+        ol,
+        br,
+        hr,
+      ]);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(mainDiv);
+    </script>
+  </body>
+</html>
